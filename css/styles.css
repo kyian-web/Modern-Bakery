@@ -262,6 +262,31 @@ address {
     flex-direction: column;
     row-gap: 16px;
 }
+/* carousel start */
+.carousel-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--color-primary-dark);
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.carousel-button:last-child {
+    transform: rotate(180deg);
+}
+.carousel-button:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-dark);
+}
+.carousel-button:hover .carousel-arrow {
+    fill: var(--color-primary-light);
+}
+/* carousel end */
 
 /* Contact section */
 .contact-title {
@@ -278,6 +303,15 @@ address {
     color: var(--color-primary-light);
     transition: all 0.3s;
     text-decoration: none;
+}
+.address-icon {
+    fill: var(--color-primary-light);
+    width: 32px;
+    height: 32px;
+    transition: 0.3s all;
+}
+.address-icon:hover {
+    fill: var(--color-brand-normal);
 }
 .address-link:hover {
     color: var(--color-brand-normal);
