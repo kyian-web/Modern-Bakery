@@ -193,12 +193,54 @@
                         <div class="contact-form">
                             <h2 class="section-title contact-title">Приєднуйся до мережі пекарень</h2>
                             <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+                            <form name="contact-form" autocomplete="on">
+                                <div class="forms-inputs">
+                                    <div class="form-field">
+                                        <label class="input-label hidden" for="user-name">Ім’я</label>
+                                        <input
+                                            class="form-input"
+                                            id="user-name"
+                                            name="user-name"
+                                            type="text"
+                                            placeholder="Ім'я"
+                                        />
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label class="input-label hidden" for="user-phone">Телефон</label>
+                                        <input
+                                            class="form-input"
+                                            id="user-phone"
+                                            name="user-phone"
+                                            type="tel"
+                                            placeholder="Телефон"
+                                        />
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label class="input-label hidden" for="user-email">Email</label>
+                                        <input
+                                            class="form-input"
+                                            id="user-email"
+                                            name="user-email"
+                                            type="email"
+                                            placeholder="Email"
+                                        />
+                                    </div>
+                                </div>
+
+                                <button class="form-button button" type="submit">Замовити дзвінок</button>
+                                <p class="form-terms">
+                                    Натискаючи на кнопку я погоджуюсь <br />
+                                    <a class="form-terms-link" href=""> з політикою конфіденційності </a>
+                                </p>
+                            </form>
                         </div>
                         <iframe
                             class="contact-map"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2spl!4v1769810846641!5m2!1sru!2spl"
-                            width="600"
-                            height="450"
+                            width="603"
+                            height="595"
                             style="border: 0"
                             allowfullscreen=""
                             loading="lazy"
@@ -265,9 +307,47 @@
         <!-- ******* FOOTER END ******* -->
 
         <!-- MODAL START -->
-        <div class="backdrop is-hidden">
+        <div class="backdrop">
             <div class="modal">
                 <button class="modal-btn-close" type="button">Close</button>
+                <h2 class="modal-title">Замовити дзвінок</h2>
+                <p class="modal-description">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+                <form name="contact-form" autocomplete="on">
+                    <div class="forms-inputs">
+                        <div class="form-field">
+                            <label class="input-label hidden" for="user-name">Ім’я</label>
+                            <input class="form-input" id="user-name" name="user-name" type="text" placeholder="Ім'я" />
+                        </div>
+
+                        <div class="form-field">
+                            <label class="input-label hidden" for="user-phone">Телефон</label>
+                            <input
+                                class="form-input"
+                                id="user-phone"
+                                name="user-phone"
+                                type="tel"
+                                placeholder="Телефон"
+                            />
+                        </div>
+
+                        <div class="form-field">
+                            <label class="input-label hidden" for="user-email">Email</label>
+                            <input
+                                class="form-input"
+                                id="user-email"
+                                name="user-email"
+                                type="email"
+                                placeholder="Email"
+                            />
+                        </div>
+                    </div>
+
+                    <button class="form-button button" type="submit">Замовити дзвінок</button>
+                    <p class="form-terms">
+                        Натискаючи на кнопку я погоджуюсь <br />
+                        <a class="form-terms-link" href=""> з політикою конфіденційності </a>
+                    </p>
+                </form>
             </div>
         </div>
         <!-- MODAL END -->
