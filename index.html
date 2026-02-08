@@ -312,11 +312,20 @@
                 <button class="modal-btn-close" type="button">Close</button>
                 <h2 class="modal-title">Замовити дзвінок</h2>
                 <p class="modal-description">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-                <form name="contact-form" autocomplete="on">
+                <form name="modal-form" autocomplete="on">
                     <div class="forms-inputs">
                         <div class="form-field">
                             <label class="input-label hidden" for="user-name">Ім’я</label>
-                            <input class="form-input" id="user-name" name="user-name" type="text" placeholder="Ім'я" />
+                            <input
+                                class="form-input"
+                                id="user-name"
+                                name="user-name"
+                                type="text"
+                                placeholder="Ім'я"
+                                minlength="2"
+                                maxlength="25"
+                                required
+                            />
                         </div>
 
                         <div class="form-field">
@@ -327,6 +336,8 @@
                                 name="user-phone"
                                 type="tel"
                                 placeholder="Телефон"
+                                pattern="^\+[0-9]{12}"
+                                required
                             />
                         </div>
 
@@ -338,9 +349,23 @@
                                 name="user-email"
                                 type="email"
                                 placeholder="Email"
+                                required
                             />
                         </div>
                     </div>
+
+                    <!-- <div class="checkbox">
+                        <input
+                            class="checkbox-input hidden"
+                            id="terms-conditions"
+                            name="terms-conditions"
+                            type="checkbox"
+                            required
+                        />
+                        <label class="checkbox-label" for="terms-conditions">
+                            Я погоджуюсь з умовами політики конфіденційності
+                        </label>
+                    </div> -->
 
                     <button class="form-button button" type="submit">Замовити дзвінок</button>
                     <p class="form-terms">

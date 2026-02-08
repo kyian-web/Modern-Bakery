@@ -109,6 +109,12 @@ address {
     color: var(--color-brand-dark);
     background-color: transparent;
 }
+.button:disabled {
+    color: gray;
+    background-color: lightgray;
+    border: none;
+    cursor: not-allowed;
+}
 
 /* Link */
 .link {
@@ -505,4 +511,29 @@ address {
 .form-terms-link {
     color: var(--color-brand-dark);
     text-underline-offset: 2px;
+}
+
+/* Checkbox */
+.checkbox {
+}
+.checkbox-input {
+    appearance: none;
+}
+.checkbox-input:checked + .checkbox-label::before {
+    background-color: var(--color-brand-normal);
+    /* border-color: var(--color-brand-normal); */
+}
+.checkbox-label {
+    position: relative;
+}
+.checkbox-label::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid var(--color-secondary-dark);
+    border-radius: 4px;
 }
