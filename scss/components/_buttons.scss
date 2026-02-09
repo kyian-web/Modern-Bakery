@@ -1,0 +1,24 @@
+.button {
+    width: 232px;
+    height: 59px;
+    background-color: var(--color-brand-normal);
+    border: 2px solid var(--color-brand-normal);
+    border-radius: 8px;
+    line-height: 1.5;
+
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--color-primary-light);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.button:hover {
+    color: var(--color-brand-dark);
+    background-color: var(--color-primary-light);
+}
+.button:disabled {
+    color: gray;
+    background-color: lightgray;
+    border: none;
+    cursor: not-allowed;
+}
