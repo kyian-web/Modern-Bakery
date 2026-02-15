@@ -1,0 +1,27 @@
+.input {
+    position: relative;
+
+    &__control {
+        padding: 16px 42px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.17;
+        border: 1px solid var(--color-secondary-dark);
+        border-radius: 8px;
+        background-color: transparent;
+        transition: all 0.3s;
+
+        &:focus {
+            outline: none;
+            border-color: var(--color-brand-normal);
+            background-color: #ffffff;
+            box-shadow: 0 0 8px 4px #ffffff;
+        }
+        &::placeholder {
+            color: var(--color-secondary-dark);
+        }
+        &:focus::placeholder {
+            color: var(--color-primary-dark);
+        }
+    }
+}

@@ -13,10 +13,11 @@
             rgba(18, 18, 17, 0) 90.36%
         ),
         url('../images/hero-bg.jpg') center top / cover no-repeat;
-}
-.hero-title {
-    text-align: center;
-    color: var(--color-primary-light);
-    font-size: 128px;
-    font-weight: 900;
+
+    &__title {
+        text-align: center;
+        color: var(--color-primary-light);
+        font-size: 128px;
+        font-weight: 900;
+    }
 }
