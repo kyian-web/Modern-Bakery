@@ -11,14 +11,15 @@
     border: 1px solid var(--color-primary-dark);
     cursor: pointer;
     transition: 0.3s all;
-}
-.carousel-button:last-child {
-    transform: rotate(180deg);
-}
-.carousel-button:hover {
-    background-color: var(--color-primary-dark);
-    fill: var(--color-primary-dark);
-}
-.carousel-button:hover .carousel-arrow {
-    fill: var(--color-primary-light);
+
+    &:last-child {
+        transform: rotate(180deg);
+    }
+    &:hover {
+        background-color: var(--color-primary-dark);
+        fill: var(--color-primary-dark);
+    }
+    &:hover .carousel-arrow {
+        fill: var(--color-primary-light);
+    }
 }
