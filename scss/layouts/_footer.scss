@@ -23,18 +23,31 @@
 
     &__container {
         display: flex;
+        flex-direction: column;
         gap: 20px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+        }
     }
     &__nav,
+    &__address {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            flex-basis: 50%;
+            text-align: left;
+        }
+    }
     &__logo,
     &__menu {
         flex-grow: 1;
     }
     &__address {
-        display: flex;
-        flex-basis: 50%;
-        gap: 20px;
-
         &-list,
         &-info {
             flex-grow: 1;
@@ -45,6 +58,20 @@
             color: var(--color-primary-light);
             transition: all 0.3s;
             text-decoration: none;
+        }
+        &-contacts {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+        }
+        &-socials {
+            display: flex;
+            justify-content: center;
+            column-gap: 22px;
+
+            @media screen and (min-width: $bp-tablet) {
+                justify-content: flex-start;
+            }
         }
         &-icon {
             fill: var(--color-primary-light);
